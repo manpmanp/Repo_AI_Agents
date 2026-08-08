@@ -1,5 +1,5 @@
 # AI Services That Can Be Built and Sold
-The services below are organized by business function rather than AI technology. This makes it easier to identify opportunities based on real business problems.
+These services are organized by business function rather than AI technology. This makes it easier to identify opportunities based on real business problems.
 ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
 ## Sales & Lead Generation    
 ### Sales Assistant
