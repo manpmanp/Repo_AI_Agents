@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services — Driva AI</title>
+<meta name="description" content="AI assistants for customer chat, booking, admin, and lead follow-up — built for small and medium businesses." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="sample-banner">This is a sample website, built to demonstrate a design direction — not a live company.</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Driva<span>AI</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html" class="nav-cta">Get in touch</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" style="padding-bottom: 40px;">
+  <div class="wrap">
+    <span class="eyebrow">What we offer</span>
+    <h1 style="font-size: clamp(1.9rem, 4vw, 2.6rem);">A small set of assistants, each built to do one job well.</h1>
+    <p class="lede">We'd rather do one thing properly than promise everything at once. Here's what we currently build — each one starts as a focused pilot before it grows into anything bigger.</p>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="wrap">
+    <div class="services-list">
+
+      <div class="service-card">
+        <span class="tag">Customer Service</span>
+        <h3>AI Receptionist &amp; Chat Assistant</h3>
+        <p>Answers calls and website chats, handles common questions, and books appointments — so customers get a fast reply even when no one's free to answer.</p>
+        <ul>
+          <li>Website chat and WhatsApp support</li>
+          <li>FAQ answers, around the clock</li>
+          <li>Hands off to a real person when needed</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="tag">Scheduling</span>
+        <h3>Booking &amp; Scheduling Assistant</h3>
+        <p>Manages your calendar, sends reminders, and reduces no-shows — without you needing to check a booking app all day.</p>
+        <ul>
+          <li>Automatic appointment reminders</li>
+          <li>Conflict-free calendar management</li>
+          <li>Easy rescheduling for customers</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="tag">Administration</span>
+        <h3>Admin &amp; Invoice Assistant</h3>
+        <p>Handles the paperwork side of the business — reading documents, creating invoices, and chasing late payments politely and consistently.</p>
+        <ul>
+          <li>Invoice creation and tracking</li>
+          <li>Payment reminders that don't get forgotten</li>
+          <li>Less manual data entry</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="tag">Sales</span>
+        <h3>Lead Follow-Up Assistant</h3>
+        <p>Keeps track of new inquiries and makes sure none of them go cold — automatic, well-timed follow-ups instead of relying on memory.</p>
+        <ul>
+          <li>Reminders for warm leads</li>
+          <li>Simple re-engagement messages</li>
+          <li>A clear view of who you've already contacted</li>
+        </ul>
+      </div>
+
+      <div class="service-card" style="grid-column: 1 / -1;">
+        <span class="tag">Custom</span>
+        <h3>A Custom Assistant, Built Around Your Workflow</h3>
+        <p>If none of the above quite fits, we start from your actual day-to-day process and design something narrower and more specific to what you need. This is usually where the strongest results come from — a small, well-targeted assistant beats a generic one every time.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Not sure which one fits your business?</h2>
+      <p>Tell us a bit about how things currently work, and we'll suggest a sensible starting point.</p>
+      <a href="contact.html" class="btn btn-primary">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Driva AI — sample website, built for demonstration purposes. &copy; 2026</p>
+</footer>
+
+<button id="chat-toggle" aria-label="Open chat">💬</button>
+<div id="chat-panel">
+  <div class="chat-header">
+    <div>
+      Driva AI Assistant
+      <small>Usually replies in a few seconds</small>
+    </div>
+    <button class="chat-close" id="chat-close" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="msg bot">Hi! I'm the Driva AI demo assistant. Ask me about our services, pricing, or how to get in touch.</div>
+  </div>
+  <div class="chat-quick" id="chat-quick">
+    <button class="chip">Services</button>
+    <button class="chip">Pricing</button>
+    <button class="chip">Contact</button>
+  </div>
+  <div class="chat-input-row">
+    <input id="chat-input" type="text" placeholder="Type a message..." />
+    <button class="chat-send" id="chat-send" aria-label="Send">➤</button>
+  </div>
+</div>
+
+<script src="chatbot.js"></script>
+</body>
+</html>

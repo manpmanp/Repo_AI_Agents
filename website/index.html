@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Driva AI — AI assistants for small businesses</title>
+<meta name="description" content="Driva AI builds AI assistants that handle the repetitive work behind running a small business — customer chat, booking, admin, and follow-up." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="sample-banner">This is a sample website, built to demonstrate a design direction — not a live company.</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Driva<span>AI</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="nav-cta">Get in touch</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">AI assistants for small businesses</span>
+    <h1>AI that runs the parts of your business you don't have time for.</h1>
+    <p class="lede">Driva AI builds simple, reliable AI assistants that answer customers, book appointments, and handle the admin work eating into your day — so you can focus on the job itself.</p>
+    <div class="cta-row">
+      <a href="services.html" class="btn btn-primary">See what we offer</a>
+      <a href="contact.html" class="btn btn-secondary">Talk to us</a>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <h2 class="section-title">How it works</h2>
+    <p class="section-sub">No long contracts, no complicated setup. We start small, prove it works, then grow from there.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h4>Tell us what's slowing you down</h4>
+        <p>A short conversation about the parts of your day that feel repetitive or easy to automate.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h4>We build one thing, well</h4>
+        <p>A single assistant, built around your actual workflow — not a generic, one-size-fits-all tool.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h4>You see it working before you commit further</h4>
+        <p>Once it's proven itself on real work, we help you expand it or add the next assistant.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Why businesses work with us</h2>
+    <p class="section-sub">Built for small and medium businesses that need practical help, not a big software project.</p>
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Built around your business</h3>
+        <p>Every assistant starts from how you actually work, not a generic template.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Fast to get running</h3>
+        <p>A first working version, not a months-long implementation project.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>A person behind it</h3>
+        <p>You work with a real person who understands your business, not a support queue.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Curious what this could look like for you?</h2>
+      <p>Send a short message and we'll get back to you with a few honest thoughts — no pressure, no sales script.</p>
+      <a href="contact.html" class="btn btn-primary">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Driva AI — sample website, built for demonstration purposes. &copy; 2026</p>
+</footer>
+
+<!-- Chatbot widget -->
+<button id="chat-toggle" aria-label="Open chat">💬</button>
+<div id="chat-panel">
+  <div class="chat-header">
+    <div>
+      Driva AI Assistant
+      <small>Usually replies in a few seconds</small>
+    </div>
+    <button class="chat-close" id="chat-close" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="msg bot">Hi! I'm the Driva AI demo assistant. Ask me about our services, pricing, or how to get in touch.</div>
+  </div>
+  <div class="chat-quick" id="chat-quick">
+    <button class="chip">Services</button>
+    <button class="chip">Pricing</button>
+    <button class="chip">Contact</button>
+  </div>
+  <div class="chat-input-row">
+    <input id="chat-input" type="text" placeholder="Type a message..." />
+    <button class="chat-send" id="chat-send" aria-label="Send">➤</button>
+  </div>
+</div>
+
+<script src="chatbot.js"></script>
+</body>
+</html>
