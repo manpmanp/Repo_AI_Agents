@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Driva AI — AI assistants for small businesses</title>
 <meta name="description" content="Driva AI builds AI assistants that handle the repetitive work behind running a small business — customer chat, booking, admin, and follow-up." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%232f6f5e%22/><text x=%2216%22 y=%2222%22 font-size=%2216%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22>D</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
@@ -15,8 +16,11 @@
 
 <header class="site-header">
   <nav class="nav">
-    <a href="index.html" class="logo">Driva<span>AI</span></a>
-    <div class="nav-links">
+    <a href="index.html" class="logo"><span class="mark">D</span>Driva<span>AI</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <div class="nav-links" id="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="services.html">Services</a>
       <a href="contact.html" class="nav-cta">Get in touch</a>
@@ -25,33 +29,90 @@
 </header>
 
 <section class="hero">
+  <div class="hero-blob one"></div>
+  <div class="hero-blob two"></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">AI assistants for small businesses</span>
+      <h1>AI that runs the <span class="accent-word">parts of your business</span> you don't have time for.</h1>
+      <p class="lede">Driva AI builds simple, reliable AI assistants that answer customers, book appointments, and handle the admin work eating into your day — so you can focus on the job itself.</p>
+      <div class="cta-row">
+        <a href="services.html" class="btn btn-primary">See what we offer</a>
+        <a href="contact.html" class="btn btn-secondary">Talk to us</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-badge calendar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/><circle cx="8.5" cy="14.5" r="1"/><circle cx="12" cy="14.5" r="1"/><circle cx="15.5" cy="14.5" r="1"/></svg>
+      </div>
+      <div class="hero-card">
+        <div class="hc-header">
+          <span class="dot"></span>
+          <span>Driva Assistant — Live</span>
+        </div>
+        <div class="hc-body">
+          <div class="bubble in">Hi! Can I book a haircut for Friday afternoon?</div>
+          <div class="bubble out">Sure — I have 2:00 or 4:30 open. Which works better?</div>
+          <div class="bubble in">4:30 is perfect, thanks!</div>
+        </div>
+        <div class="hc-status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          Booked automatically — no calls missed
+        </div>
+      </div>
+      <div class="hero-badge check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
-    <span class="eyebrow">AI assistants for small businesses</span>
-    <h1>AI that runs the parts of your business you don't have time for.</h1>
-    <p class="lede">Driva AI builds simple, reliable AI assistants that answer customers, book appointments, and handle the admin work eating into your day — so you can focus on the job itself.</p>
-    <div class="cta-row">
-      <a href="services.html" class="btn btn-primary">See what we offer</a>
-      <a href="contact.html" class="btn btn-secondary">Talk to us</a>
+    <h2 class="section-title">One assistant, built around your business</h2>
+    <p class="section-sub">Not a generic bot shared across every customer — a single assistant configured for how your business runs, keeping the everyday tasks it handles in sync instead of scattering them across separate tools.</p>
+
+    <div class="hub-image-wrap reveal">
+      <img src="images/hub-illustration.jpg" alt="An AI assistant icon connected to four labeled functions: answering customers, booking appointments, handling admin work, and follow-ups and reminders." loading="lazy" />
     </div>
   </div>
 </section>
 
 <section class="strip">
   <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="num">3–6 wk</div>
+        <div class="label">typical time to a working pilot</div>
+      </div>
+      <div class="stat">
+        <div class="num">1</div>
+        <div class="label">focused assistant to start, not ten at once</div>
+      </div>
+      <div class="stat">
+        <div class="num">100%</div>
+        <div class="label">human-reviewed before anything goes live</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2 class="section-title">How it works</h2>
     <p class="section-sub">No long contracts, no complicated setup. We start small, prove it works, then grow from there.</p>
     <div class="steps">
-      <div class="step">
+      <div class="step reveal">
         <div class="num">1</div>
         <h4>Tell us what's slowing you down</h4>
         <p>A short conversation about the parts of your day that feel repetitive or easy to automate.</p>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <div class="num">2</div>
         <h4>We build one thing, well</h4>
         <p>A single assistant, built around your actual workflow — not a generic, one-size-fits-all tool.</p>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <div class="num">3</div>
         <h4>You see it working before you commit further</h4>
         <p>Once it's proven itself on real work, we help you expand it or add the next assistant.</p>
@@ -60,23 +121,29 @@
   </div>
 </section>
 
-<section>
+<section class="strip">
   <div class="wrap">
     <h2 class="section-title">Why businesses work with us</h2>
     <p class="section-sub">Built for small and medium businesses that need practical help, not a big software project.</p>
     <div class="grid-3">
-      <div class="card">
-        <div class="icon">🎯</div>
+      <div class="card reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </div>
         <h3>Built around your business</h3>
         <p>Every assistant starts from how you actually work, not a generic template.</p>
       </div>
-      <div class="card">
-        <div class="icon">⚡</div>
+      <div class="card reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13 2 3 14h7l-1 8 11-14h-8l1-6z"/></svg>
+        </div>
         <h3>Fast to get running</h3>
         <p>A first working version, not a months-long implementation project.</p>
       </div>
-      <div class="card">
-        <div class="icon">🤝</div>
+      <div class="card reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
         <h3>A person behind it</h3>
         <p>You work with a real person who understands your business, not a support queue.</p>
       </div>
@@ -86,7 +153,95 @@
 
 <section>
   <div class="wrap">
-    <div class="cta-band">
+    <h2 class="section-title">Who we are</h2>
+    <p class="section-sub">We're tech enthusiasts and working professionals who put several years of experience into a suite of business services built to make your life easier — and your business more efficient.</p>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Real technical backgrounds</h3>
+        <p>Years spent building and shipping software, not just experimenting with the latest AI trend.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+        </div>
+        <h3>Experience, put to practical use</h3>
+        <p>The same skills used on larger software projects, pointed at the everyday problems small businesses actually have.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="3" y1="13" x2="21" y2="13"/></svg>
+        </div>
+        <h3>A genuine suite of services</h3>
+        <p>Built as a connected set of assistants, not one-off scripts — so what you adopt today keeps paying off later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <h2 class="section-title">What businesses like yours could expect</h2>
+    <p class="section-sub">Illustrative examples of the kind of impact a focused assistant can have — not claims from live customers.</p>
+    <div class="grid-3">
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Missed calls used to mean missed bookings. Now the assistant catches them and gets the appointment on the calendar before we even see the notification."</p>
+        <div class="person">
+          <div class="avatar">HS</div>
+          <div class="who">Owner, hair &amp; beauty salon<br><span class="role">illustrative example</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Invoicing used to eat a whole afternoon every week. That's down to about twenty minutes of checking, not doing."</p>
+        <div class="person">
+          <div class="avatar">EL</div>
+          <div class="who">Owner, electrical contracting firm<br><span class="role">illustrative example</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"We stopped losing leads to slow follow-up. The assistant nudges them automatically, and we only step in for the real conversations."</p>
+        <div class="person">
+          <div class="avatar">PL</div>
+          <div class="who">Owner, plumbing business<br><span class="role">illustrative example</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="testimonial-note">These are illustrative scenarios, not statements from real customers — this is a sample site.</p>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <h2 class="section-title">Common questions</h2>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>Do I need any technical knowledge to work with you?</summary>
+        <p>No. You explain how your business runs today, and we handle the technical side — including a plain-language walkthrough before anything goes live.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long before I see something working?</summary>
+        <p>A first working pilot typically takes a few weeks, not months, because we start with one focused assistant rather than a full platform.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if it doesn't work out?</summary>
+        <p>We'd rather find that out early and honestly than string out a project that isn't delivering. The first engagement is scoped small on purpose.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is my customer data handled responsibly?</summary>
+        <p>Yes — data handling and legal basis are agreed upfront, in plain language, before any customer information is touched.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band reveal">
       <h2>Curious what this could look like for you?</h2>
       <p>Send a short message and we'll get back to you with a few honest thoughts — no pressure, no sales script.</p>
       <a href="contact.html" class="btn btn-primary">Get in touch</a>
@@ -99,14 +254,18 @@
 </footer>
 
 <!-- Chatbot widget -->
-<button id="chat-toggle" aria-label="Open chat">💬</button>
+<button id="chat-toggle" aria-label="Open chat">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</button>
 <div id="chat-panel">
   <div class="chat-header">
     <div>
       Driva AI Assistant
       <small>Usually replies in a few seconds</small>
     </div>
-    <button class="chat-close" id="chat-close" aria-label="Close chat">✕</button>
+    <button class="chat-close" id="chat-close" aria-label="Close chat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
   </div>
   <div class="chat-body" id="chat-body">
     <div class="msg bot">Hi! I'm the Driva AI demo assistant. Ask me about our services, pricing, or how to get in touch.</div>
@@ -118,10 +277,13 @@
   </div>
   <div class="chat-input-row">
     <input id="chat-input" type="text" placeholder="Type a message..." />
-    <button class="chat-send" id="chat-send" aria-label="Send">➤</button>
+    <button class="chat-send" id="chat-send" aria-label="Send">
+      <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+    </button>
   </div>
 </div>
 
+<script src="nav.js"></script>
 <script src="chatbot.js"></script>
 </body>
 </html>
